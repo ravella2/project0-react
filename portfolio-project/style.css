@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    max-width: 100%;
     background-image: url(./imgs/la-header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -51,6 +52,14 @@ nav a {
 nav a:hover {
     opacity: .8;
     color: #D7CEBD;
+}
+
+.hamburger {
+    padding: 10px;
+	background-color: black;
+    font-size: 1.688rem;
+    color: whitesmoke;
+    display: none;
 }
 
 .box {
@@ -200,6 +209,48 @@ h3 {
 
 .fa:hover {
     opacity: 0.6;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 1165px) {
+    .aboutme-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutme-content img {
+        max-width: 40%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .test-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    .hamburger {
+        display: inline-block;
+    }
+    
+    nav a{
+        display: none;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    h1 {
+        font-size: 40px;
+    }
 }
 
 
