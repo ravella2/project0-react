@@ -10,6 +10,8 @@ body {
     margin: 0;
 }
 
+/*---Header---*/
+
 header {
     max-width: 100%;
     background-image: url(./imgs/la-header.jpg);
@@ -61,6 +63,8 @@ nav a:hover {
     color: whitesmoke;
     display: none;
 }
+
+/*---Main Content---*/
 
 .box {
     padding-top: 80px;
@@ -126,6 +130,8 @@ p {
     text-align: center;
 }
 
+/*---Contact Form---*/
+
 #contact {
     margin-top: 50px;
 }
@@ -189,6 +195,8 @@ button:hover {
     cursor: pointer;
 }
 
+/*---Footer---*/
+
 #social-media {
     display: flex;
     justify-content: center;
@@ -212,9 +220,13 @@ h3 {
 }
 
 
-/*Media Queries*/
+/*------Media Queries------*/
 
 @media screen and (max-width: 1165px) {
+
+    h2 {
+        text-align: center;
+    }
     .aboutme-content {
         display: flex;
         flex-direction: column;
@@ -237,9 +249,15 @@ h3 {
     .hamburger {
         display: inline-block;
     }
-    
-    nav a{
-        display: none;
+    nav li {
+        display:flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+
+    .active {
+        display: block;
     }
 
     h1 {

@@ -7,4 +7,9 @@ $(document).ready(function() {
             $(".box").css({"opacity" : "1"});
         }  
     });
+
+    $('.hamburger').on('click', function () {
+        console.log("cool");
+        $('ul').toggleClass('active');
+    })
 });

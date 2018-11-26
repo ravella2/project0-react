@@ -10,7 +10,7 @@ I wanted to put together a website that let me practice my HTML and CSS styling 
 
 ## Unsolved Problems
 
-I couldn't figure out how to get an element to fade in when a user scrolled over to that section.
+I couldn't figure out how to get an element to fade in when a user scrolled over to that section. I also couldn't really figure out when to implement JavaScript.
 
 ## Biggest Wins/Challenges
 
