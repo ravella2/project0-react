@@ -81,6 +81,7 @@ h2 {
 
 .aboutme-content p {
     margin: 0 100px;
+    text-align: center;
 }
 
 #portfolio {
@@ -88,12 +89,32 @@ h2 {
 }
 
 #portfolio h2 {
-    text-align: right;
+    text-align: center;
     padding-right: 15px;
 }
 
 p {
     font-size: 20px;
+}
+
+#testimonials {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+
+.test-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.test-content p {
+    margin: 0 100px;
+    text-align: center;
 }
 
 
@@ -152,7 +173,8 @@ button:hover {
 
 #social-media {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding: 50px;
 }
 
 h3 {
@@ -160,7 +182,7 @@ h3 {
 }
 
 .fa {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 30px;
     width: 40px;
     text-align: center;
@@ -170,6 +192,8 @@ h3 {
 .fa:hover {
     opacity: 0.6;
 }
+
+
 
 
 

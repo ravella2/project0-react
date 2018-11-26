@@ -5,6 +5,6 @@ $(document).ready(function() {
         }
         else {
             $(".box").css({"opacity" : "1"})
-        }
-    })
-})
+        }  
+    });
+});
