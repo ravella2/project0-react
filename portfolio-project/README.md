@@ -1,9 +1,9 @@
-#Project Portfolio
+# Project Portfolio
 
-##Technologies Used
+## Technologies Used
 
 I used Bootstrap and Jquery to create a basic web portfolio.
 
-##Process/Approach
+## Process/Approach
 
 I wanted to 
