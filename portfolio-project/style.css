@@ -117,6 +117,15 @@ p {
     text-align: center;
 }
 
+#contact {
+    margin-top: 50px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
 
 form {
     margin: 0 auto;
