@@ -1,0 +1,304 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+@import url('https://fonts.googleapis.com/css?family=Playball');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/*---Header---*/
+
+header {
+    max-width: 100%;
+    /* background-image: url(../imgs/la-header.jpg); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Playball', cursive;
+    color: rgba(11, 48, 121, 0.918);
+    text-align: center;
+}
+
+h1 {
+    font-size: 75px;
+    padding-top: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    background-color: black;
+    z-index: 1;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a {
+    font-family: 'Playball', cursive;
+    text-decoration: none;
+    color: #D7CEBD;
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav a:hover {
+    opacity: .8;
+    color: #D7CEBD;
+}
+
+.hamburger {
+    padding: 10px;
+	background-color: black;
+    font-size: 1.688rem;
+    color: whitesmoke;
+    display: none;
+}
+
+/*---Main Content---*/
+
+.box {
+    padding-top: 80px;
+    transition: .5s;
+}
+
+
+h2 {
+    font-family: 'Playball', cursive;
+    font-size: 40px;
+}
+
+#about-me {
+    padding: 100px;
+    margin-bottom: 100px;
+}
+
+#about-me h2, #testimonials h2{
+    padding-left: 15px;
+
+}
+
+.aboutme-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutme-content p {
+    margin: 0 100px;
+    text-align: center;
+}
+
+#portfolio {
+    padding-top: 50px;
+}
+
+#portfolio h2 {
+    text-align: center;
+    padding-right: 15px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#testimonials {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+
+.test-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.test-content p {
+    margin: 0 100px;
+    text-align: center;
+}
+
+/*---Contact Form---*/
+
+#contact {
+    margin-top: 50px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+form {
+    margin: 0 auto;
+    width: 450px;
+    padding: 1em;
+    border: 2px solid #ccc;
+    border-radius: 3em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+form h2 {
+    text-align: center;
+}
+
+input, textarea {
+    font: 1em cursive;
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.btn {
+    padding-left: 140px;
+}
+
+button {
+    transition-duration: 0.4s;
+    font-family: 'Playball', cursive;
+    margin-left: .5em;
+    padding: 10px 40px;;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+button:hover {
+    background-color: #999999;
+    color: white;
+    cursor: pointer;
+}
+
+/*---Footer---*/
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+h3 {
+    font-family: 'Playball', cursive
+}
+
+.fa {
+    padding-top: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+
+/*------Media Queries------*/
+
+@media screen and (max-width: 1165px) {
+
+    h2 {
+        text-align: center;
+    }
+    .aboutme-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutme-content img {
+        max-width: 40%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .test-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    .hamburger {
+        display: inline-block;
+    }
+    nav li {
+        display:flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+
+    .active {
+        display: block;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    h1 {
+        font-size: 40px;
+    }
+}
